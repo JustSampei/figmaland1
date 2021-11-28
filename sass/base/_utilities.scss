@@ -1,0 +1,31 @@
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+}
+
+//$values: $tiny, $small, $medium, $big, $huge; // 1rem, 2rem, 4rem, 8rem, 10rem
+//$space_names: tiny, small, medium, big, huge;
+//$sides: (top, bottom, left, right);
+//
+//@for $i from 1 through 5 {
+//    @each $space_name in $space_names {
+//        .mar-#{$space_name} {
+//            margin: nth($values, $i);
+//        }
+//
+//        @each $side in $sides {
+//            .mar-#{$side}-#{$space_name} {
+//                margin-#{$side}: nth($values, $i);
+//            }
+//        }
+//    }
+//}

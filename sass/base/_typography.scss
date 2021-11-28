@@ -1,0 +1,11 @@
+@font-face {
+    font-family: graphik;
+    src: url(../../Graphik-Regular.ttf);
+}
+
+
+body {
+	font-family: graphik;
+	font-weight: 400;
+	color: $color-black;
+}

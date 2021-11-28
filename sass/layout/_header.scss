@@ -1,0 +1,11 @@
+.header {
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../../img/header_background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
