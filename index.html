@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title>Figma Land</title>
+    </head>
 
-	<title>Figma Land</title>
-</head>
+    <body>
+        <div class="header">
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <ul class="navbar-links">
+                        <li>
+                            <a href="#">
+                                <h6>Home</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>Product</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>Pricing</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>About</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>Contact</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__center">
+                    <figure class="logo__box">
+                        <img
+                            class="logo__box--img"
+                            srcset="../img/logo_light.png"
+                            alt="Logo"
+                        />
+                    </figure>
+                </div>
+                <div class="navbar__right">
+                    <svg class="navbar__icon">
+                        <use xlink:href="./img/SVG/sprite.svg#twitter"></use>
+                    </svg>
+                    <svg class="navbar__icon">
+                        <use xlink:href="./img/SVG/sprite.svg#facebook"></use>
+                    </svg>
+                    <svg class="navbar__icon">
+                        <use xlink:href="./img/SVG/sprite.svg#linkedin"></use>
+                    </svg>
+                </div>
+            </nav>
+            <div class="heading">
+                <h1 class="heading__title">
+                    The best products start with Figma
+                </h1>
+                <h4 class="heading__subtitle">
+                    Most calendars are designed for teams. Slate is designed for
+                    freelancers
+                </h4>
+                <a class="button button--primary" href="#">
+                    <h5>Try for free</h5>
+                </a>
+            </div>
+        </div>
 
-<body>
-	<div class="header">
-		<nav class="navbar">
-			<div class="navbar__left">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Product</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="navbar__logo"></div>
-			<div class="navbar__right"></div>
-		</nav>
-	</div>
-</body>
-
+        <div class="features">
+            <div class="features__description">
+                <h2 class="text--dark">Features</h2>
+                <h4 class="text--dark">
+                    Most calendars are designed for teams.<br />Slate is
+                    designed for freelancers
+                </h4>
+            </div>
+            <div class="features__cards">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </body>
 </html>

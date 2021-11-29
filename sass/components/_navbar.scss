@@ -1,30 +1,66 @@
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+	height: 20vh;
+
+	@include flex(row, 1, center, center);
+	margin-bottom: 5vw;
 
     &__left {
-        display: flex;
-        flex-grow: 2;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, 1, flex-end, center);
+		max-width: 40%;
+	}
+
+    &__center {
+        @include flex(row, 0, center, center);
+		width: auto;
     }
 
-    &__logo {
-        display: flex;
-        flex-grow: 1;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+	&-links {
+		list-style: none;
+		margin-right: 2vw;
+		width: 100%;
+
+		@include flex(row, 1, flex-end, center);
+
+		li {
+			
+			a {
+				text-decoration: none;
+				color: $color-white;
+			}
+
+			&:not(:last-child) {
+				margin-right: 2vw;
+			}
+		}
+	}
 
     &__right {
-        display: flex;
-        flex-grow: 2;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, 1, center, center);
+		max-width: 40%;
     }
+
+	&__icon {
+		height: 3rem;
+		width: 3rem;
+		
+		&:not(:last-child) {
+			margin-right: 2vw;
+		}
+	}
+}
+
+.logo {
+		
+	&__box {
+		height: $big;
+		max-width: 100%;
+		object-fit: fill;
+
+		&--img {
+			height: 100%;
+			width: auto;
+			
+		}
+	}
+	
 }

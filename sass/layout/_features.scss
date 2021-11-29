@@ -1,0 +1,9 @@
+.features {
+	height: 100vh;
+
+	@include flex (column, 0, flex-start, center);
+
+	&__description {
+		text-align: center;
+	}
+}

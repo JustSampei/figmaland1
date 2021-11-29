@@ -1,0 +1,12 @@
+.button {
+	display: inline;
+	
+	border-radius: 100px;
+	padding: 1rem 5rem;
+	color: currentColor;
+	text-decoration: none;
+
+	&--primary {
+		background-color: $color-primary;
+	}
+}
