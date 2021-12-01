@@ -52,25 +52,41 @@
                     </figure>
                 </div>
                 <div class="navbar__right">
-                    <svg class="navbar__icon">
-                        <use xlink:href="./img/SVG/sprite.svg#twitter"></use>
-                    </svg>
-                    <svg class="navbar__icon">
-                        <use xlink:href="./img/SVG/sprite.svg#facebook"></use>
-                    </svg>
-                    <svg class="navbar__icon">
-                        <use xlink:href="./img/SVG/sprite.svg#linkedin"></use>
-                    </svg>
+                    <div class="navbar__icons">
+                        <svg class="navbar__icon">
+                            <use
+                                xlink:href="./img/SVG/sprite.svg#twitter"
+                            ></use>
+                        </svg>
+                        <svg class="navbar__icon">
+                            <use
+                                xlink:href="./img/SVG/sprite.svg#facebook"
+                            ></use>
+                        </svg>
+                        <svg class="navbar__icon">
+                            <use
+                                xlink:href="./img/SVG/sprite.svg#linkedin"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div class="navbar__navigation">
+                        <input type="checkbox" class="navbar__navigation--checkbox" id="nav_check" hidden/>
+                        <label for="nav_check">
+                          <span class="navbar__navigation--line">&nbsp;</span>
+                        </label>
+                    </div>
                 </div>
             </nav>
             <div class="heading">
-                <h1 class="heading__title">
-                    The best products start with Figma
-                </h1>
-                <h4 class="heading__subtitle">
-                    Most calendars are designed for teams. Slate is designed for
-                    freelancers
-                </h4>
+                <div class="heading__description">
+                    <h1 class="heading__description--title">
+                        The best products start with Figma
+                    </h1>
+                    <h4 class="heading__description--subtitle">
+                        Most calendars are designed for teams. Slate is designed
+                        for freelancers
+                    </h4>
+                </div>
                 <a class="button button--primary" href="#">
                     <h5>Try for free</h5>
                 </a>
@@ -79,8 +95,10 @@
 
         <div class="features">
             <div class="features__description">
-                <h2 class="text--dark">Features</h2>
-                <h4 class="text--dark">
+                <h2 class="features__description--title text--dark">
+                    Features
+                </h2>
+                <h4 class="features__description--subtitle text--dark">
                     Most calendars are designed for teams.<br />Slate is
                     designed for freelancers
                 </h4>

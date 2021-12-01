@@ -1,66 +1,115 @@
 .navbar {
-	height: 20vh;
+    height: 20vh;
 
-	@include flex(row, 1, center, center);
-	margin-bottom: 5vw;
+    @include flex(row, 1, center, center);
+    padding: 5vh;
 
     &__left {
         @include flex(row, 1, flex-end, center);
-		max-width: 40%;
-	}
+        max-width: 40%;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
 
     &__center {
         @include flex(row, 0, center, center);
-		width: auto;
     }
 
-	&-links {
-		list-style: none;
-		margin-right: 2vw;
-		width: 100%;
+    &-links {
+        list-style: none;
+        margin-right: 2vw;
+        width: 100%;
 
-		@include flex(row, 1, flex-end, center);
+        @include flex(row, 1, flex-end, center);
 
-		li {
-			
-			a {
-				text-decoration: none;
-				color: $color-white;
-			}
+        li {
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
 
-			&:not(:last-child) {
-				margin-right: 2vw;
-			}
-		}
-	}
+            &:not(:last-child) {
+                margin-right: 2vw;
+            }
+        }
+    }
 
     &__right {
         @include flex(row, 1, center, center);
-		max-width: 40%;
+        max-width: 40%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            justify-content: flex-end;
+        }
     }
 
-	&__icon {
-		height: 3rem;
-		width: 3rem;
-		
-		&:not(:last-child) {
-			margin-right: 2vw;
-		}
-	}
+    &__icons {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+
+        &:not(:last-child) {
+            margin-right: 2vw;
+        }
+    }
+
+    &__navigation {
+        display: none;
+        @include flex(column, 1, center, flex-end);
+        max-width: $medium;
+        position: relative;
+
+        &--checkbox:checked + {
+            background-color: red;
+        }
+
+        &--line {
+            width: 66.66666%;
+
+            &,
+            &::before,
+            &::after {
+                background-color: white;
+                position: absolute;
+                display: none;
+                content: '';
+                height: 2px;
+                right: 0;
+                @include respond(tab-port) {
+                    display: inline-block;
+                }
+            }
+
+            &::before {
+                top: -1rem;
+                width: 150%;
+            }
+
+            &::after {
+                top: 1rem;
+                width: 50%;
+            }
+        }
+    }
 }
 
 .logo {
-		
-	&__box {
-		height: $big;
-		max-width: 100%;
-		object-fit: fill;
+    &__box {
+        height: $big;
+        max-width: 100%;
+        object-fit: fill;
 
-		&--img {
-			height: 100%;
-			width: auto;
-			
-		}
-	}
-	
+        &--img {
+            height: 100%;
+            width: auto;
+        }
+    }
 }

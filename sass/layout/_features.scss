@@ -1,9 +1,17 @@
 .features {
-	height: 100vh;
+    height: 100vh;
 
-	@include flex (column, 0, flex-start, center);
+    @include flex(column, 0, flex-start, center);
 
-	&__description {
-		text-align: center;
-	}
+    &__description {
+        text-align: center;
+
+        &--title {
+          margin-bottom: $medium;
+        }
+
+        &--subtitle {
+
+        }
+    }
 }

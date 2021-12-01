@@ -4,32 +4,47 @@
     display: flex;
     flex-direction: column;
 
-    background-image: linear-gradient(rgba($color-black, .6), rgba($color-black, .6)), url(../../img/header_background.jpeg);
+    background-image: linear-gradient(
+            rgba($color-black, 0.6),
+            rgba($color-black, 0.6)
+        ),
+        url(../../img/header_background.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-	clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
+    margin-bottom: $big;
+
+    clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
+
+    @include respond(tab-land) {
+        clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
+    }
 }
 
 .heading {
+    height: 100%;
+    width: 100%;
 
-	height: 100%;
-	width: 100%;
+    @include flex(column, 0, flex-start, center);
 
-	@include flex(column, 0, flex-start, center);
+    &__description {
+        width: 60%;
 
-	&__title {
-		width: 50%;
-		text-align: center;
-		line-height: 8.4rem;
-		margin-bottom: $small;
-	}
+        @include respond(tab-land) {
+            width: 70%;
+        }
 
-	&__subtitle {
-		width: 50%;
-		text-align: center;
-		line-height: 4rem;
-		margin-bottom: $big;
-	}
+        &--title {
+            text-align: center;
+            line-height: 8.4rem;
+            margin-bottom: $small;
+        }
+
+        &--subtitle {
+            text-align: center;
+            line-height: 4rem;
+            margin-bottom: $huge;
+        }
+    }
 }
