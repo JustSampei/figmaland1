@@ -10,4 +10,8 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
+<<<<<<< HEAD
 trim_trailing_whitespace = false
+=======
+trim_trailing_whitespace = false
+>>>>>>> 4db5c90212e9845dddf9b7a1e3ac9cb1dbadd39b
