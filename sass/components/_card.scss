@@ -1,0 +1,22 @@
+.card {
+
+	width: 30%;
+	max-width: 30rem;
+	padding: 3rem;
+
+	@include flex (column, 0, center, center);
+
+	@include respond(phone) {
+		width: 90%;
+	}
+
+	&__icon {
+		height: 4.5rem;
+		width: 4.5rem;
+		color: $color-primary;
+	}
+
+	& *:not(:last-child) {
+		margin-bottom: $small;
+	}
+}

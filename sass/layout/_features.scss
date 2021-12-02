@@ -1,5 +1,39 @@
 .features {
-    height: 100vh;
+	width: 100%;
 
     @include flex(column, 0, flex-start, center);
+
+	&__info {
+		padding: 5vh;
+		width: 50%;
+		order: -1;
+
+		@include flex(column, 0, flex-start, center);
+
+		@include respond(tab-port) {
+			width: 80%;
+		}
+	}
+
+	&__cards {
+		@include flex(row, 0, space-between, flex-start);
+		width: 60%;
+		order: 2;
+
+		@include respond(tab-port) {
+			width: 90%;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__video {
+		@include flex(column, 1, center, center);
+		width: 100%;
+		order: 3;
+
+		@include respond(tab-port) {
+			order: 1;
+		}
+	}
 }

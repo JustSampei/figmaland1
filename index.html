@@ -1,114 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>Figma Land</title>
-    </head>
+		<title>Figma Land</title>
+	</head>
 
-    <body>
-        <section class="hero m__b--big">
-            <nav class="navbar">
-                <div class="navbar__left">
-                    <ul class="navbar-links">
-                        <li>
-                            <a href="#">
-                                <h6>Home</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h6>Product</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h6>Pricing</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h6>About</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h6>Contact</h6>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar__center">
-                    <figure class="logo-box">
-                        <img
-                            class="logo-box__img"
-                            srcset="../img/logo_light.png"
-                            alt="Logo"
-                        />
-                    </figure>
-                </div>
-                <div class="navbar__right">
-                    <div class="socials">
-                        <svg class="socials__icon">
-                            <use
-                                xlink:href="./img/SVG/sprite.svg#twitter"
-                            ></use>
-                        </svg>
-                        <svg class="socials__icon">
-                            <use
-                                xlink:href="./img/SVG/sprite.svg#facebook"
-                            ></use>
-                        </svg>
-                        <svg class="socials__icon">
-                            <use
-                                xlink:href="./img/SVG/sprite.svg#linkedin"
-                            ></use>
-                        </svg>
-                    </div>
-                    <div class="navigation">
-                        <input type="checkbox" class="navigation__checkbox" id="nav_check" hidden/>
-                        <label for="nav_check" class="navigation__label">
-                          <span class="line">&nbsp;</span>
-                        </label>
-                    </div>
-                </div>
-            </nav>
-            <div class="hero__header">
-                <div class="description">
-                    <h1 class="description__title m__b--small">
-                        The best products start with Figma
-                    </h1>
-                    <h4 class="description__subtitle m__b--huge">
-                        Most calendars are designed for teams. Slate is designed
-                        for freelancers
-                    </h4>
-                </div>
-                <a class="button button--primary" href="#">
-                    <h5>Try for free</h5>
-                </a>
-            </div>
+	<body>
+		<section class="hero m__b--big">
+			<nav class="navbar">
+				<div class="navbar__left">
+					<ul class="navbar-links">
+						<li>
+							<a href="#">
+								<h6>Home</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h6>Product</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h6>Pricing</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h6>About</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h6>Contact</h6>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar__center">
+					<figure class="logo-box">
+						<img
+							class="logo-box__img"
+							srcset="../img/logo_light.png"
+							alt="Logo"
+						/>
+					</figure>
+				</div>
+				<div class="navbar__right">
+					<div class="socials">
+						<svg class="socials__icon">
+							<use
+								xlink:href="./img/SVG/sprite.svg#twitter"
+							></use>
+						</svg>
+						<svg class="socials__icon">
+							<use
+								xlink:href="./img/SVG/sprite.svg#facebook"
+							></use>
+						</svg>
+						<svg class="socials__icon">
+							<use
+								xlink:href="./img/SVG/sprite.svg#linkedin"
+							></use>
+						</svg>
+					</div>
+					<div class="navigation">
+						<input
+							type="checkbox"
+							class="navigation__checkbox"
+							id="nav_check"
+							hidden
+						/>
+						<label for="nav_check" class="navigation__label">
+							<span class="line">&nbsp;</span>
+						</label>
+					</div>
+				</div>
+			</nav>
+			<div class="hero__info">
+				<div class="description">
+					<h1 class="description__title m__b--small">
+						The best products start with Figma
+					</h1>
+					<h4 class="description__subtitle m__b--huge">
+						Most calendars are designed for teams. Slate is designed
+						for freelancers
+					</h4>
+				</div>
+				<a class="button button--primary" href="#">
+					<h5>Try for free</h5>
+				</a>
+			</div>
+		</section>
 
-        </section>
+		<section class="features">
+			<div class="features__info m__b--big">
+				<div class="description">
+					<h2 class="description__title text--dark m__b--medium">
+						Features
+					</h2>
+					<h4 class="description__subtitle text--dark">
+						Most calendars are designed for teams. Slate is designed
+						for freelancers
+					</h4>
+				</div>
+			</div>
 
-        <section class="features">
-            <div class="description">
-                <h2 class="description__title text--dark ">
-                    Features
-                </h2>
-                <h4 class="description__subtitle text--dark">
-                    Most calendars are designed for teams.<br />Slate is
-                    designed for freelancers
-                </h4>
-            </div>
-            <div class="features__cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </div>
-        </section>
-    </body>
+			<div class="features__cards">
+				<div class="card m__b--big">
+					<svg class="card__icon">
+						<use xlink:href="./img/SVG/sprite.svg#boxes"></use>
+					</svg>
+					<div class="card__description">
+						<div class="description">
+							<h3 class="description__title text--dark">
+								OpenType features<br />Variable fonts
+							</h3>
+							<h5 class="description__subtitle text--dark">
+								Slate helps you see how many more days you need
+								to work to reach your financial goal.
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="card m__b--big">
+					<svg class="card__icon">
+						<use xlink:href="./img/SVG/sprite.svg#pen"></use>
+					</svg>
+					<div class="card__description">
+						<div class="description">
+							<h3 class="description__title text--dark">
+								Design with real data
+							</h3>
+							<h5 class="description__subtitle text--dark">
+								Slate helps you see how many more days you need
+								to work to reach your financial goal.
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="card m__b--big">
+					<svg class="card__icon">
+						<use xlink:href="./img/SVG/sprite.svg#brush"></use>
+					</svg>
+					<div class="card__description">
+						<div class="description">
+							<h3 class="description__title text--dark">
+								Fastest way to<br />take action
+							</h3>
+							<h5 class="description__subtitle text--dark">
+								Slate helps you see how many more days you need
+								to work to reach your financial goal.
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="features__video">
+				<div class="video-container">
+					<img
+						class="video-container__img"
+						src="./img/video.png"
+						alt="video"
+					/>
+					<span class="video-container__player">&nbsp;</span>
+					<svg class="video-container__icon">
+						<use xlink:href="img/SVG/sprite.svg#play"></use>
+					</svg>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
