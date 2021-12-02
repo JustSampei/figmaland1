@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <div class="header">
+        <section class="hero m__b--big">
             <nav class="navbar">
                 <div class="navbar__left">
                     <ul class="navbar-links">
@@ -43,46 +43,46 @@
                     </ul>
                 </div>
                 <div class="navbar__center">
-                    <figure class="logo__box">
+                    <figure class="logo-box">
                         <img
-                            class="logo__box--img"
+                            class="logo-box__img"
                             srcset="../img/logo_light.png"
                             alt="Logo"
                         />
                     </figure>
                 </div>
                 <div class="navbar__right">
-                    <div class="navbar__icons">
-                        <svg class="navbar__icon">
+                    <div class="socials">
+                        <svg class="socials__icon">
                             <use
                                 xlink:href="./img/SVG/sprite.svg#twitter"
                             ></use>
                         </svg>
-                        <svg class="navbar__icon">
+                        <svg class="socials__icon">
                             <use
                                 xlink:href="./img/SVG/sprite.svg#facebook"
                             ></use>
                         </svg>
-                        <svg class="navbar__icon">
+                        <svg class="socials__icon">
                             <use
                                 xlink:href="./img/SVG/sprite.svg#linkedin"
                             ></use>
                         </svg>
                     </div>
-                    <div class="navbar__navigation">
-                        <input type="checkbox" class="navbar__navigation--checkbox" id="nav_check" hidden/>
-                        <label for="nav_check">
-                          <span class="navbar__navigation--line">&nbsp;</span>
+                    <div class="navigation">
+                        <input type="checkbox" class="navigation__checkbox" id="nav_check" hidden/>
+                        <label for="nav_check" class="navigation__label">
+                          <span class="line">&nbsp;</span>
                         </label>
                     </div>
                 </div>
             </nav>
-            <div class="heading">
-                <div class="heading__description">
-                    <h1 class="heading__description--title">
+            <div class="hero__header">
+                <div class="description">
+                    <h1 class="description__title m__b--small">
                         The best products start with Figma
                     </h1>
-                    <h4 class="heading__description--subtitle">
+                    <h4 class="description__subtitle m__b--huge">
                         Most calendars are designed for teams. Slate is designed
                         for freelancers
                     </h4>
@@ -91,14 +91,15 @@
                     <h5>Try for free</h5>
                 </a>
             </div>
-        </div>
 
-        <div class="features">
-            <div class="features__description">
-                <h2 class="features__description--title text--dark">
+        </section>
+
+        <section class="features">
+            <div class="description">
+                <h2 class="description__title text--dark ">
                     Features
                 </h2>
-                <h4 class="features__description--subtitle text--dark">
+                <h4 class="description__subtitle text--dark">
                     Most calendars are designed for teams.<br />Slate is
                     designed for freelancers
                 </h4>
@@ -108,6 +109,6 @@
                 <div class="card"></div>
                 <div class="card"></div>
             </div>
-        </div>
+        </section>
     </body>
 </html>

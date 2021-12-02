@@ -1,0 +1,14 @@
+.socials {
+	@include respond(tab-port) {
+		display: none;
+	}
+
+	&__icon {
+		height: 3rem;
+		width: 3rem;
+
+		&:not(:last-child) {
+			margin-right: 2vw;
+		}
+	}
+}

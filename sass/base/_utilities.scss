@@ -12,6 +12,23 @@
     }
 }
 
+.m {
+	&__b {
+		&--small {
+			margin-bottom: 2vh;
+		}
+		&--medium {
+			margin-bottom: 4vh;
+		}
+		&--big {
+			margin-bottom: 6vh;
+		}
+		&--huge {
+			margin-bottom: 10vh;
+		}
+	}
+}
+
 //$values: $tiny, $small, $medium, $big, $huge; // 1rem, 2rem, 4rem, 8rem, 10rem
 //$space_names: tiny, small, medium, big, huge;
 //$sides: (top, bottom, left, right);

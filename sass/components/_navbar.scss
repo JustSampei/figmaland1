@@ -1,115 +1,68 @@
 .navbar {
-    height: 20vh;
+	height: 20vh;
+	width: 100%;
+	padding: 5vh;
 
-    @include flex(row, 1, center, center);
-    padding: 5vh;
+	@include flex(row, 1, center, center);
 
-    &__left {
-        @include flex(row, 1, flex-end, center);
-        max-width: 40%;
+	@include respond(tab-port) {
+		justify-content: space-between;
+	}
 
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
+	&__left {
+		@include flex(row, 1, flex-end, center);
+		width: 40%;
+		height: 100%;
 
-    &__center {
-        @include flex(row, 0, center, center);
-    }
+		@include respond(tab-port) {
+			display: none;
+		}
+	}
 
-    &-links {
-        list-style: none;
-        margin-right: 2vw;
-        width: 100%;
+	&__center {
+		@include flex(row, 0, center, center);
+		height: 100%
+	}
 
-        @include flex(row, 1, flex-end, center);
+	&__right {
+		@include flex(row, 1, center, center);
+		width: 40%;
+		height: 100%;
 
-        li {
-            a {
-                text-decoration: none;
-                color: $color-white;
-            }
-
-            &:not(:last-child) {
-                margin-right: 2vw;
-            }
-        }
-    }
-
-    &__right {
-        @include flex(row, 1, center, center);
-        max-width: 40%;
-
-        @include respond(tab-port) {
-            width: 100%;
-            justify-content: flex-end;
-        }
-    }
-
-    &__icons {
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
-
-    &__icon {
-        height: 3rem;
-        width: 3rem;
-
-        &:not(:last-child) {
-            margin-right: 2vw;
-        }
-    }
-
-    &__navigation {
-        display: none;
-        @include flex(column, 1, center, flex-end);
-        max-width: $medium;
-        position: relative;
-
-        &--checkbox:checked + {
-            background-color: red;
-        }
-
-        &--line {
-            width: 66.66666%;
-
-            &,
-            &::before,
-            &::after {
-                background-color: white;
-                position: absolute;
-                display: none;
-                content: '';
-                height: 2px;
-                right: 0;
-                @include respond(tab-port) {
-                    display: inline-block;
-                }
-            }
-
-            &::before {
-                top: -1rem;
-                width: 150%;
-            }
-
-            &::after {
-                top: 1rem;
-                width: 50%;
-            }
-        }
-    }
+		@include respond(tab-port) {
+			width: 100%;
+			height: 10vh;
+			justify-content: flex-end;
+		}
+	}
 }
 
-.logo {
-    &__box {
-        height: $big;
-        max-width: 100%;
-        object-fit: fill;
+.logo-box {
+	height: $big;
+	max-width: 100%;
+	object-fit: fill;
 
-        &--img {
-            height: 100%;
-            width: auto;
-        }
-    }
+	&__img {
+		height: 100%;
+		width: auto;
+	}
+}
+
+.navbar-links {
+	list-style: none;
+	margin-right: 2vw;
+	width: 100%;
+
+	@include flex(row, 1, flex-end, center);
+
+	li {
+		a {
+			text-decoration: none;
+			color: $color-white;
+		}
+
+		&:not(:last-child) {
+			margin-right: 2vw;
+		}
+	}
 }

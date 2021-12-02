@@ -2,16 +2,4 @@
     height: 100vh;
 
     @include flex(column, 0, flex-start, center);
-
-    &__description {
-        text-align: center;
-
-        &--title {
-          margin-bottom: $medium;
-        }
-
-        &--subtitle {
-
-        }
-    }
 }

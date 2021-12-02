@@ -1,0 +1,50 @@
+.navigation {
+	display: none;
+
+	@include respond(tab-port) {
+		@include flex(column, 1, center, flex-end);
+		width: $medium;
+		height: 100%;
+		position: relative;
+	}
+
+	&__checkbox:checked + {
+		background-color: red;
+	}
+
+	&__label {
+		height: 100%;
+		width: $big;
+		position: relative;
+
+		& .line {
+			width: 66.66666%;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&,
+			&::before,
+			&::after {
+				position: absolute;
+				background-color: white;
+				display: none;
+				content: '';
+				height: 2px;
+				right: 0;
+				@include respond(tab-port) {
+					display: inline-block;
+				}
+			}
+
+			&::before {
+				width: 150%;
+				top: -1rem;
+			}
+
+			&::after {
+				width: 50%;
+				top: 1rem;
+			}
+		}
+	}
+}
