@@ -1,7 +1,7 @@
 .features {
 	width: 100%;
 
-    @include flex(column, 0, flex-start, center);
+	@include flex(column, 0, flex-start, center);
 
 	&__info {
 		padding: 5vh;
@@ -29,8 +29,16 @@
 
 	&__video {
 		@include flex(column, 1, center, center);
-		width: 100%;
+		width: 60%;
 		order: 3;
+
+		@include respond(tab-land) {
+			width: 90%;
+		}
+
+		@include respond(big-desktop) {
+			width: 75%;
+		}
 
 		@include respond(tab-port) {
 			order: 1;

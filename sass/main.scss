@@ -1,17 +1,25 @@
+//ABSTRACTS
 @import './abstracts/variables';
 @import './abstracts/mixins';
 
+//BASE
 @import './base/base';
 @import './base/animation';
 @import './base/typography';
 @import './base/utilities';
 
+//COMPONENTS
 @import './components/navbar';
 @import './components/navigation';
 @import './components/description';
 @import './components/socials';
 @import './components/button';
 @import './components/card';
+@import './components/imgcontainer';
+
+
+//LAYOUTS
 @import './layout/hero';
 @import './layout/features';
-@import './components/videocontainer';
+@import './layout/organize';
+@import './layout/newsletter';

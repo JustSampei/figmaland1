@@ -1,12 +1,17 @@
 .button {
 	display: inline;
-	
+
 	border-radius: 100px;
-	padding: 1rem 5rem;
+	padding: 2rem 2rem;
 	color: currentColor;
 	text-decoration: none;
+	font-weight: 700;
 
 	&--primary {
 		background-color: $color-primary;
+	}
+
+	&--large {
+		padding: 2rem 5rem;
 	}
 }

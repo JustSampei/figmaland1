@@ -2,11 +2,18 @@
 	width: 100%;
 
 	&__title {
-		text-align: center;
-		font-weight: bolder;
+		font-weight: 700;
+
+		&--center {
+			text-align: center;
+		}
 	}
 
 	&__subtitle {
-		text-align: center;
+		font-weight: 500;
+
+		&--center {
+			text-align: center;
+		}
 	}
 }

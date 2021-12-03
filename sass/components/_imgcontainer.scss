@@ -1,17 +1,14 @@
-.video-container {
-	width: 60%;
+.img-container {
+	width: 100%;
+	@include flex (column, 0, center, center);
 	position: relative;
-
-	@include respond(tab-land) {
-		width: 90%;
-	}
-
-	@include respond(big-desktop) {
-		width: 80%;
-	}
 
 	&__img {
 		width: 100%;
+
+		&--limited {
+			max-width: 60rem;
+		}
 	}
 
 	&__player {

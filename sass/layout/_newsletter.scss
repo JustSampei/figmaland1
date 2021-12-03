@@ -1,0 +1,54 @@
+.newsletter {
+	width: 60%;
+	height: 100vh;
+	margin: 0 auto;
+	@include flex(row, 0, center, center);
+
+	@include respond(tab-land) {
+		width: 90%;
+	}
+
+	@include respond(tab-port) {
+		flex-direction: column;
+		& *:not(:last-child) {
+			margin-bottom: $big;
+		}
+	}
+
+	@include respond(big-desktop) {
+		width: 80%;
+	}
+
+	&__description {
+		@include flex(column, 0, center, flex-start);
+		width: 40%;
+		order: 2;
+
+		& *:not(:last-child) {
+			margin-bottom: $medium;
+		}
+
+		@include respond(tab-port) {
+			order: -1;
+			width: 100%;
+			align-items: center;
+			margin-bottom: $small;
+
+			& * {
+				text-align: center;
+			}
+		}
+	}
+
+	&__img-container {
+		order: 1;
+		width: 60%;
+		margin-right: $big;
+		@include flex(column, 0, center, center);
+
+		@include respond(phone) {
+			margin-right: 0;
+			width: 80%;
+		}
+	}
+}
