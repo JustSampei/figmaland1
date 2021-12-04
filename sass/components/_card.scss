@@ -1,13 +1,27 @@
 .card {
-
 	width: 30%;
-	max-width: 30rem;
 	padding: 3rem;
+	background-color: $color-white;
 
-	@include flex (column, 0, center, center);
+	@include flex(column, 0, center, center);
 
-	@include respond(phone) {
-		width: 90%;
+	&--spaced {
+		& * :not(:last-child) {
+			margin-bottom: $small;
+		}
+	}
+
+	&--limited {
+		max-width: 30rem;
+	}
+
+	&--rounded {
+		border-radius: 2rem;
+	}
+
+	&--primary {
+		background-color: $color-primary;
+		transform: scaleY(120%);
 	}
 
 	&__icon {
@@ -16,7 +30,19 @@
 		color: $color-primary;
 	}
 
-	& *:not(:last-child) {
-		margin-bottom: $small;
+	&__price {
+		@include flex(row, 0, center, center);
+
+		& > :not(:last-child) {
+			padding: $tiny;
+		}
+	}
+
+	@include respond(tab-port) {
+		width: 60%;
+	}
+
+	@include respond(phone) {
+		width: 90%;
 	}
 }

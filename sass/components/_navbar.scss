@@ -1,9 +1,9 @@
 .navbar {
-	height: 20vh;
+	height: 15vh;
 	width: 100%;
 	padding: 5vh;
 
-	@include flex(row, 1, center, center);
+	@include flex(row, 0, center, center);
 
 	@include respond(tab-port) {
 		justify-content: space-between;
@@ -45,24 +45,5 @@
 	&__img {
 		height: 100%;
 		width: auto;
-	}
-}
-
-.navbar-links {
-	list-style: none;
-	margin-right: 2vw;
-	width: 100%;
-
-	@include flex(row, 1, flex-end, center);
-
-	li {
-		a {
-			text-decoration: none;
-			color: $color-white;
-		}
-
-		&:not(:last-child) {
-			margin-right: 2vw;
-		}
 	}
 }

@@ -1,8 +1,23 @@
 .description {
 	width: 100%;
+	color: $color-grey-dark;
+
+	&--white {
+		color: $color-grey-light;
+	}
 
 	&--center {
 		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+
+	&--spaced {
+		& > :not(:last-child) {
+			margin-bottom: $medium;
+		}
 	}
 
 	&__title {

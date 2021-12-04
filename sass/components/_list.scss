@@ -1,0 +1,25 @@
+.list {
+	list-style: none;
+	margin-right: 2vw;
+	width: 100%;
+
+	@include flex(row, 1, flex-end, center);
+
+	&--column {
+		flex-direction: column;
+	}
+
+	li {
+		color: $color-grey-dark;
+
+		&:not(:last-child) {
+			margin-right: 2vw;
+		}
+	}
+
+	&--white {
+		li {
+			color: $color-white;
+		}
+	}
+}

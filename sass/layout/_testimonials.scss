@@ -1,22 +1,17 @@
-.partners {
+.testimonials {
 	width: 100%;
 	min-height: 75vh;
 	padding: $huge 0;
 
 	@include flex(column, 0, center, center);
 
-	& > :not(:last-child) {
+	& >:not(:last-child) {
 		margin-bottom: $medium;
 	}
 
 	@include info-element;
 
-	&__logos {
+	&__media {
 		width: 100%;
-		@include flex(column, 0, center, center);
-
-		& > :not(:last-child) {
-			margin-bottom: $medium;
-		}
 	}
 }

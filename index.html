@@ -11,27 +11,27 @@
 
 	<body>
 		<!-- HERO SECTION-->
-		<section class="hero">
-			<nav class="navbar m__b--medium">
+		<section class="hero" id="home">
+			<nav class="navbar">
 				<div class="navbar__left">
-					<ul class="navbar-links">
+					<ul class="list list--white">
 						<li>
-							<a href="#">
+							<a href="#home">
 								<h6>Home</h6>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#product">
 								<h6>Product</h6>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#pricing">
 								<h6>Pricing</h6>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#about">
 								<h6>About</h6>
 							</a>
 						</li>
@@ -83,7 +83,7 @@
 				</div>
 			</nav>
 			<div class="hero__info">
-				<div class="description description--center">
+				<div class="description description--center description--white">
 					<h1 class="description__title m__b--small">
 						The best products start with Figma
 					</h1>
@@ -102,62 +102,60 @@
 		</section>
 
 		<!-- FEATURES SECTION-->
-		<section class="features">
+		<section class="features" id="product">
 			<div class="features__info m__b--small">
 				<div class="description description--center">
-					<h2 class="description__title text--dark m__b--medium">
-						Features
-					</h2>
-					<h4 class="description__subtitle text--dark">
+					<h2 class="description__title m__b--medium">Features</h2>
+					<h4 class="description__subtitle">
 						Most calendars are designed for teams. Slate is designed
 						for freelancers
 					</h4>
 				</div>
 			</div>
 
-			<div class="features__cards">
-				<div class="card m__b--big">
+			<div class="features__cards features__cards--spaced">
+				<div class="card card--limited card--spaced">
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#boxes"></use>
 					</svg>
 					<div class="card__info">
-						<div class="description--center">
-							<h3 class="description__title text--dark">
+						<div class="description description--center">
+							<h3 class="description__title">
 								OpenType features<br />Variable fonts
 							</h3>
-							<h5 class="description__subtitle text--dark">
+							<h5 class="description__subtitle">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="card m__b--big">
+				<div class="card card--limited card--spaced">
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#pen"></use>
 					</svg>
 					<div class="card__info">
-						<div class="description--center">
-							<h3 class="description__title text--dark">
+						<div class="description description--center">
+							<h3 class="description__title">
 								Design with real data
 							</h3>
-							<h5 class="description__subtitle text--dark">
+							<h5 class="description__subtitle">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="card m__b--big">
+				<div class="card card--limited card--spaced">
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#brush"></use>
 					</svg>
 					<div class="card__info">
-						<div class="description--center">
-							<h3 class="description__title text--dark">
+						<div class="description description--center">
+							<h3 class="description__title">
 								Fastest way to<br />take action
 							</h3>
-							<h5 class="description__subtitle text--dark">
+							<h5 class="description__subtitle">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
@@ -184,10 +182,8 @@
 		<section class="organize">
 			<div class="organize__info">
 				<div class="description">
-					<h2 class="description__title text--dark">
-						Fastest way to organize
-					</h2>
-					<h4 class="description__subtitle text--dark">
+					<h2 class="description__title">Fastest way to organize</h2>
+					<h4 class="description__subtitle">
 						Most calendars are designed for teams.<br />Slate is
 						designed for freelancers
 					</h4>
@@ -220,24 +216,18 @@
 			</div>
 			<div class="newsletter__info">
 				<div class="description">
-					<h5
-						class="
-							description__subtitle
-							text--dark text--bold
-							m__b--small
-						"
-					>
+					<h5 class="description__subtitle text--bold m__b--small">
 						At your fingertips
 					</h5>
-					<h2 class="description__title text--dark">
+					<h2 class="description__title">
 						Lightning fast prototyping
 					</h2>
 				</div>
 				<div class="description description--hider">
-					<h5 class="description__title text--dark text--bolder">
+					<h5 class="description__title">
 						Subscribe to our newsletter
 					</h5>
-					<h5 class="description__subtitle text--dark">
+					<h5 class="description__subtitle">
 						Available exclusivery on Figmaland
 					</h5>
 				</div>
@@ -260,10 +250,10 @@
 			</div>
 			<div class="newsletter__subscribe newsletter__subscribe--seeker">
 				<div class="description description--center">
-					<h5 class="description__title text--dark text--bolder">
+					<h5 class="description__title">
 						Subscribe to our newsletter
 					</h5>
-					<h5 class="description__subtitle text--dark">
+					<h5 class="description__subtitle">
 						Available exclusivery on Figmaland
 					</h5>
 				</div>
@@ -287,13 +277,11 @@
 		</section>
 
 		<!-- PARTNERS SECTION-->
-		<section class="partners">
+		<section class="partners" id="about">
 			<div class="partners__info">
 				<div class="description description--center">
-					<h2 class="description__title text--dark m__b--small">
-						Partners
-					</h2>
-					<h4 class="description__subtitle text--dark">
+					<h2 class="description__title m__b--small">Partners</h2>
+					<h4 class="description__subtitle">
 						Most calendars are designed for teams.<br />
 						Slate is designed for freelancers.
 					</h4>
@@ -303,9 +291,7 @@
 				<div class="logos-row">
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 						</div>
 						<div class="img-container">
 							<img
@@ -319,9 +305,7 @@
 					</div>
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 							<img
 								class="
 									img-container__img img-container__img--small
@@ -333,9 +317,7 @@
 					</div>
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 							<img
 								class="
 									img-container__img img-container__img--small
@@ -349,9 +331,7 @@
 				<div class="logos-row logos-row--hider">
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 						</div>
 						<div class="img-container">
 							<img
@@ -365,9 +345,7 @@
 					</div>
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 							<img
 								class="
 									img-container__img img-container__img--small
@@ -379,9 +357,7 @@
 					</div>
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 							<img
 								class="
 									img-container__img img-container__img--small
@@ -393,9 +369,7 @@
 					</div>
 					<div class="logos-row__logo">
 						<div class="description description--center">
-							<h5 class="description__subtitle text--dark">
-								Partner name
-							</h5>
+							<h5 class="description__subtitle">Partner name</h5>
 							<img
 								class="
 									img-container__img img-container__img--small
@@ -412,6 +386,133 @@
 				class="button button--large button--primary text--bolder"
 				>Try for free</a
 			>
+		</section>
+
+		<!-- TESTIMONIALS SECTION -->
+		<section class="testimonials" id="testimonials-section">
+			<div class="testimonials__info">
+				<div
+					class="
+						description
+						description
+						description--center
+						description--spaced
+					"
+				>
+					<h2 class="description__title">Testimonials</h2>
+					<div class="img-container">
+						<img
+							class="img-container__img img-container__img--small"
+							src="./img/logos_ibm.png"
+							alt="newsletter"
+						/>
+					</div>
+					<h4 class="description__subtitle">
+						Most calendars are designed for teams.<br />
+						Slate is designed for freelancers.
+					</h4>
+				</div>
+			</div>
+			<div class="testimonials__media">
+				<div class="media">
+					<div class="media__img">
+						<div class="img-container">
+							<img
+								class="
+									img-container__img
+									img-container__img--account
+									img-container__img--rounded
+								"
+								src="./img/testimonials/account1.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="media__info">
+						<div class="description">
+							<h5 class="description__title">Organize across</h5>
+							<h5 class="description__subtitle">Ui designer</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a
+				href="#"
+				class="button button--large button--primary text--bolder"
+				>More testimonials</a
+			>
+		</section>
+
+		<!-- PRICING SECTION -->
+		<section class="pricing">
+			<div class="pricing__info">
+				<div
+					class="
+						description
+						description--center
+						description--white
+						description--spaced
+					"
+				>
+					<h2 class="description__title">Pricing</h2>
+					<h4 class="description__subtitle">
+						Most calendars are designed for teams. Slate is designed
+						for freelancers
+					</h4>
+				</div>
+			</div>
+			<div class="pricing__cards pricing__cards--spaced">
+				<div class="card card--rounded">
+					<div class="card__info">
+						<div class="description description--center">
+							<h3 class="description__title">FREE</h3>
+							<h5 class="description__subtitle">
+								Organize across all apps by hand
+							</h5>
+						</div>
+					</div>
+					<div class="card__price">
+						<div class="description description--right">
+							<h1 class="description__title text--bolder">10</h1>
+						</div>
+						<div class="description">
+							<h3 class="description__title">$</h3>
+							<h5 class="description__subtitle">Per Month</h5>
+						</div>
+					</div>
+					<div class="card__list">
+						<ul class="list list--column">
+							<li>
+								<h4 href="#home">
+									<h6>Home</h6>
+								</h4>
+							</li>
+							<li>
+								<h4 href="#product">
+									<h6>Product</h6>
+								</h4>
+							</li>
+							<li>
+								<h4 href="#pricing">
+									<h6>Pricing</h6>
+								</h4>
+							</li>
+							<li>
+								<h4 href="#h4bout">
+									<h6>h4bout</h6>
+								</h4>
+							</li>
+							<li>
+								<h4 href="#">
+									<h6>Conth4ct</h6>
+								</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card card--rounded card--primary"></div>
+				<div class="card card--rounded"></div>
+			</div>
 		</section>
 	</body>
 </html>

@@ -3,7 +3,10 @@
 
 	border-radius: 100px;
 	padding: 2rem 2rem;
-	background-color: #e8e8e8;
+	background-color: $color-grey-light;
+	border: 2px ;
+	border-style: solid;
+	border-color: $color-grey;
 
 	&--primary {
 		background-color: $color-primary;
@@ -13,8 +16,7 @@
 		padding: 2rem 5rem;
 	}
 
-	&:focus,
-	&:focus-visible {
-		border: none;
+	&--squared {
+		border-radius: 0;
 	}
 }

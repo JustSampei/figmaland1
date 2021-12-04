@@ -1,4 +1,4 @@
-@mixin flex ($direction, $grow, $justify, $align){
+@mixin flex($direction, $grow, $justify, $align) {
 	display: flex;
 	flex-direction: $direction;
 	flex-grow: $grow;
@@ -7,18 +7,26 @@
 }
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		} //600px
+	}
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		} //900px
+	}
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		} //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		} //1800
+	}
 }
 
 @mixin hider {
@@ -29,12 +37,29 @@
 	}
 }
 
-@mixin seeker ($breakpoint) {
+@mixin seeker($breakpoint) {
 	&--seeker {
 		display: none;
 
 		@include respond($breakpoint) {
 			@content;
+		}
+	}
+}
+
+@mixin info-element {
+	&__info {
+		padding: 5vh;
+		width: 50%;
+
+		@include flex(column, 0, flex-start, center);
+
+		&--ordered {
+			order: -1;
+		}
+
+		@include respond(tab-port) {
+			width: 80%;
 		}
 	}
 }

@@ -1,26 +1,22 @@
 .features {
 	width: 100%;
-	min-height: 80vh;
+	min-height: 75vh;
 	padding: $huge 0;
 
 	@include flex(column, 0, flex-start, center);
 
-	&__info {
-		padding: 5vh;
-		width: 50%;
-		order: -1;
-
-		@include flex(column, 0, flex-start, center);
-
-		@include respond(tab-port) {
-			width: 80%;
-		}
-	}
+	@include info-element;
 
 	&__cards {
 		@include flex(row, 0, space-between, flex-start);
 		width: 60%;
 		order: 2;
+
+		&--spaced {
+			& > :not(:last-child) {
+				margin-bottom: $big;
+			}
+		}
 
 		@include respond(tab-port) {
 			width: 90%;

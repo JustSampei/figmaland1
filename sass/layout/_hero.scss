@@ -1,7 +1,7 @@
 .hero {
 	height: 95vh;
 
-	@include flex (column, 1, center, center);
+	@include flex (column, 1, flex-start, center);
 
 	background-image: linear-gradient(
 			rgba($color-black, 0.6),
@@ -18,14 +18,5 @@
 		clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
 	}
 
-	&__info {
-		height: 100%;
-		width: 50%;
-
-		@include flex(column, 0, flex-start, center);
-
-		@include respond(tab-port) {
-			width: 80%;
-		}
-	}
+	@include info-element;
 }
