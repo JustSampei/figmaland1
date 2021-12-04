@@ -1,10 +1,9 @@
-.button {
+.input {
 	display: inline;
 
 	border-radius: 100px;
 	padding: 2rem 2rem;
-	color: currentColor;
-	text-decoration: none;
+	background-color: #e8e8e8;
 
 	&--primary {
 		background-color: $color-primary;
@@ -12,5 +11,10 @@
 
 	&--large {
 		padding: 2rem 5rem;
+	}
+
+	&:focus,
+	&:focus-visible {
+		border: none;
 	}
 }

@@ -1,11 +1,11 @@
 .organize {
 	width: 60%;
-	height: 100vh;
+	height: 80vh;
 	margin: 0 auto;
 	@include flex(row, 0, center, center);
 
 	@include respond(tab-land) {
-		width: 90%;
+		width: 80%;
 	}
 
 	@include respond(tab-port) {

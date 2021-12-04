@@ -1,6 +1,6 @@
 .newsletter {
 	width: 60%;
-	height: 100vh;
+	height: 80vh;
 	margin: 0 auto;
 	@include flex(row, 0, center, center);
 
@@ -10,7 +10,7 @@
 
 	@include respond(tab-port) {
 		flex-direction: column;
-		& *:not(:last-child) {
+		& >:not(:last-child) {
 			margin-bottom: $big;
 		}
 	}
@@ -19,12 +19,12 @@
 		width: 80%;
 	}
 
-	&__description {
+	&__info {
 		@include flex(column, 0, center, flex-start);
 		width: 40%;
 		order: 2;
 
-		& *:not(:last-child) {
+		& >:not(:last-child) {
 			margin-bottom: $medium;
 		}
 

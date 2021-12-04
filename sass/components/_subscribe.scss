@@ -1,0 +1,13 @@
+.subscribe {
+	width: 100%;
+	@include flex (row, 0, space-between, center);
+
+	&__button {
+		width: 33%;
+	}
+
+	&__input {
+		width: 66%;
+		border: none;
+	}
+}
