@@ -6,7 +6,11 @@
 	&__img {
 		width: 100%;
 
-		&--limited {
+		&--small {
+			max-width: 20rem;
+		}
+
+		&--medium {
 			max-width: 60rem;
 		}
 	}

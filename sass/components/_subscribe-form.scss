@@ -1,4 +1,4 @@
-.subscribe {
+.subscribe-form {
 	width: 100%;
 	@include flex (row, 0, space-between, center);
 
@@ -10,4 +10,7 @@
 		width: 66%;
 		border: none;
 	}
+
+	@include hider;
+
 }

@@ -1,0 +1,26 @@
+.partners {
+	width: 100%;
+	min-height: 80vh;
+	padding: $huge 0;
+
+	@include flex(column, 0, center, center);
+
+	& > :not(:last-child) {
+		margin-bottom: $medium;
+	}
+
+	&__info {
+		@include respond(tab-port) {
+			width: 70%;
+		}
+	}
+
+	&__logos {
+		width: 100%;
+		@include flex(column, 0, center, center);
+
+		& > :not(:last-child) {
+			margin-bottom: $medium;
+		}
+	}
+}

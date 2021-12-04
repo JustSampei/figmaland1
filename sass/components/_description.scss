@@ -1,19 +1,17 @@
 .description {
 	width: 100%;
 
+	&--center {
+		text-align: center;
+	}
+
 	&__title {
 		font-weight: 700;
-
-		&--center {
-			text-align: center;
-		}
 	}
 
 	&__subtitle {
 		font-weight: 500;
-
-		&--center {
-			text-align: center;
-		}
 	}
+
+	@include hider;
 }

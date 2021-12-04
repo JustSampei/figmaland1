@@ -10,8 +10,9 @@
 	</head>
 
 	<body>
-		<section class="hero m__b--big">
-			<nav class="navbar m__b--big">
+		<!-- HERO SECTION-->
+		<section class="hero">
+			<nav class="navbar m__b--medium">
 				<div class="navbar__left">
 					<ul class="navbar-links">
 						<li>
@@ -82,49 +83,32 @@
 				</div>
 			</nav>
 			<div class="hero__info">
-				<div class="description">
-					<h1
-						class="
-							description__title description__title--center
-							m__b--small
-						"
-					>
+				<div class="description description--center">
+					<h1 class="description__title m__b--small">
 						The best products start with Figma
 					</h1>
-					<h4
-						class="
-							description__subtitle description__subtitle--center
-							m__b--huge
-						"
-					>
+					<h4 class="description__subtitle m__b--big">
 						Most calendars are designed for teams. Slate is designed
 						for freelancers
 					</h4>
 				</div>
-				<a class="button button--primary button--large" href="#">
+				<a
+					class="button button--primary button--large text--bolder"
+					href="#"
+				>
 					<h5>Try for free</h5>
 				</a>
 			</div>
 		</section>
 
+		<!-- FEATURES SECTION-->
 		<section class="features">
-			<div class="features__info m__b--big">
-				<div class="description">
-					<h2
-						class="
-							description__title description__title--center
-							text--dark
-							m__b--medium
-						"
-					>
+			<div class="features__info m__b--small">
+				<div class="description description--center">
+					<h2 class="description__title text--dark m__b--medium">
 						Features
 					</h2>
-					<h4
-						class="
-							description__subtitle description__subtitle--center
-							text--dark
-						"
-					>
+					<h4 class="description__subtitle text--dark">
 						Most calendars are designed for teams. Slate is designed
 						for freelancers
 					</h4>
@@ -136,24 +120,12 @@
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#boxes"></use>
 					</svg>
-					<div class="card__description">
-						<div class="description">
-							<h3
-								class="
-									description__title
-									description__title--center
-									text--dark
-								"
-							>
+					<div class="card__info">
+						<div class="description--center">
+							<h3 class="description__title text--dark">
 								OpenType features<br />Variable fonts
 							</h3>
-							<h5
-								class="
-									description__subtitle
-									description__subtitle--center
-									text--dark
-								"
-							>
+							<h5 class="description__subtitle text--dark">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
@@ -164,24 +136,12 @@
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#pen"></use>
 					</svg>
-					<div class="card__description">
-						<div class="description">
-							<h3
-								class="
-									description__title
-									description__title--center
-									text--dark
-								"
-							>
+					<div class="card__info">
+						<div class="description--center">
+							<h3 class="description__title text--dark">
 								Design with real data
 							</h3>
-							<h5
-								class="
-									description__subtitle
-									description__subtitle--center
-									text--dark
-								"
-							>
+							<h5 class="description__subtitle text--dark">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
@@ -192,24 +152,12 @@
 					<svg class="card__icon">
 						<use xlink:href="./img/SVG/sprite.svg#brush"></use>
 					</svg>
-					<div class="card__description">
-						<div class="description">
-							<h3
-								class="
-									description__title
-									description__title--center
-									text--dark
-								"
-							>
+					<div class="card__info">
+						<div class="description--center">
+							<h3 class="description__title text--dark">
 								Fastest way to<br />take action
 							</h3>
-							<h5
-								class="
-									description__subtitle
-									description__subtitle--center
-									text--dark
-								"
-							>
+							<h5 class="description__subtitle text--dark">
 								Slate helps you see how many more days you need
 								to work to reach your financial goal.
 							</h5>
@@ -232,8 +180,9 @@
 			</div>
 		</section>
 
+		<!-- ORGANIZE SECTION-->
 		<section class="organize">
-			<div class="organize__description">
+			<div class="organize__info">
 				<div class="description">
 					<h2 class="description__title text--dark">
 						Fastest way to organize
@@ -250,18 +199,20 @@
 			<div class="organize__img-container">
 				<div class="img-container">
 					<img
-						class="img-container__img img-container__img--limited"
+						class="img-container__img img-container__img--medium"
 						src="./img/laptop.png"
 						alt="laptop organized"
 					/>
 				</div>
 			</div>
 		</section>
+
+		<!-- NEWSLETTER SECTION-->
 		<section class="newsletter">
 			<div class="newsletter__img-container">
 				<div class="img-container">
 					<img
-						class="img-container__img img-container__img--limited"
+						class="img-container__img img-container__img--medium"
 						src="./img/newsletter.png"
 						alt="newsletter"
 					/>
@@ -269,14 +220,20 @@
 			</div>
 			<div class="newsletter__info">
 				<div class="description">
-					<h5 class="description__subtitle text--dark text--bold m__b--small">
+					<h5
+						class="
+							description__subtitle
+							text--dark text--bold
+							m__b--small
+						"
+					>
 						At your fingertips
 					</h5>
 					<h2 class="description__title text--dark">
 						Lightning fast prototyping
 					</h2>
 				</div>
-				<div class="description">
+				<div class="description description--hider">
 					<h5 class="description__title text--dark text--bolder">
 						Subscribe to our newsletter
 					</h5>
@@ -284,27 +241,177 @@
 						Available exclusivery on Figmaland
 					</h5>
 				</div>
-				<div class="subscribe">
+				<div class="subscribe-form subscribe-form--hider">
 					<input
-						class="
-							subscribe__input
-							input
-						"
+						class="subscribe-form__input input"
 						type="text"
 						placeholder="Your email"
 					/>
 					<a
 						href="#"
 						class="
-							subscribe__button
+							subscribe-form__button
 							button button--primary
-							text--bold
-							text--center
+							text--bolder text--center
 						"
 						>Subscribe</a
 					>
 				</div>
 			</div>
+			<div class="newsletter__subscribe newsletter__subscribe--seeker">
+				<div class="description description--center">
+					<h5 class="description__title text--dark text--bolder">
+						Subscribe to our newsletter
+					</h5>
+					<h5 class="description__subtitle text--dark">
+						Available exclusivery on Figmaland
+					</h5>
+				</div>
+				<div class="subscribe-form">
+					<input
+						class="subscribe-form__input input"
+						type="text"
+						placeholder="Your email"
+					/>
+					<a
+						href="#"
+						class="
+							subscribe-form__button
+							button button--primary
+							text--bolder text--center
+						"
+						>Subscribe</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- PARTNERS SECTION-->
+		<section class="partners">
+			<div class="partners__info">
+				<div class="description description--center">
+					<h2 class="description__title text--dark m__b--small">
+						Partners
+					</h2>
+					<h4 class="description__subtitle text--dark">
+						Most calendars are designed for teams.<br />
+						Slate is designed for freelancers.
+					</h4>
+				</div>
+			</div>
+			<div class="partners__logos">
+				<div class="logos-row">
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+						</div>
+						<div class="img-container">
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_amazon.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_dropbox.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_google.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="logos-row logos-row--hider">
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+						</div>
+						<div class="img-container">
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_ibm.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_microsoft.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_uber.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+					<div class="logos-row__logo">
+						<div class="description description--center">
+							<h5 class="description__subtitle text--dark">
+								Partner name
+							</h5>
+							<img
+								class="
+									img-container__img img-container__img--small
+								"
+								src="./img/logos_amazon.png"
+								alt="newsletter"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a
+				href="#"
+				class="button button--large button--primary text--bolder"
+				>Try for free</a
+			>
 		</section>
 	</body>
 </html>

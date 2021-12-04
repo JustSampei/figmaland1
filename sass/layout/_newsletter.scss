@@ -1,6 +1,7 @@
 .newsletter {
 	width: 60%;
-	height: 80vh;
+	min-height: 80vh;
+	padding: $huge 0;
 	margin: 0 auto;
 	@include flex(row, 0, center, center);
 
@@ -10,7 +11,7 @@
 
 	@include respond(tab-port) {
 		flex-direction: column;
-		& >:not(:last-child) {
+		& > :not(:last-child) {
 			margin-bottom: $big;
 		}
 	}
@@ -24,19 +25,23 @@
 		width: 40%;
 		order: 2;
 
-		& >:not(:last-child) {
+		& > :not(:last-child) {
 			margin-bottom: $medium;
 		}
 
 		@include respond(tab-port) {
 			order: -1;
-			width: 100%;
+			width: 70%;
 			align-items: center;
 			margin-bottom: $small;
 
 			& * {
 				text-align: center;
 			}
+		}
+
+		@include respond(phone) {
+			width: 90%;
 		}
 	}
 
@@ -46,9 +51,36 @@
 		margin-right: $big;
 		@include flex(column, 0, center, center);
 
-		@include respond(phone) {
+		@include respond(tab-port) {
 			margin-right: 0;
 			width: 80%;
+		}
+	}
+
+	&__subscribe {
+		order: 2;
+		@include hider;
+
+		@include seeker (tab-port) {
+			@include flex(column, 0, center, flex-start);
+		}
+
+		& > :not(:last-child) {
+			margin-bottom: $medium;
+		}
+
+		@include respond(tab-port) {
+			width: 70%;
+			align-items: center;
+			margin-bottom: $small;
+
+			& * {
+				text-align: center;
+			}
+		}
+
+		@include respond(phone) {
+			width: 90%;
 		}
 	}
 }

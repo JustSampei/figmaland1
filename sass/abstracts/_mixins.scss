@@ -20,3 +20,21 @@
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+
+@mixin hider {
+	&--hider {
+		@include respond(tab-port) {
+			display: none;
+		}
+	}
+}
+
+@mixin seeker ($breakpoint) {
+	&--seeker {
+		display: none;
+
+		@include respond($breakpoint) {
+			@content;
+		}
+	}
+}

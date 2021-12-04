@@ -1,6 +1,7 @@
 .organize {
 	width: 60%;
-	height: 80vh;
+	min-height: 80vh;
+	padding: $huge 0;
 	margin: 0 auto;
 	@include flex(row, 0, center, center);
 
@@ -19,9 +20,10 @@
 		width: 80%;
 	}
 
-	&__description {
+	&__info {
 		@include flex(column, 0, center, flex-start);
 		width: 40%;
+		padding-left: $big;
 
 		& *:not(:last-child) {
 			margin-bottom: $medium;
@@ -31,6 +33,7 @@
 			width: 100%;
 			align-items: center;
 			margin-bottom: $small;
+			padding-left: 0;
 
 			& * {
 				text-align: center;

@@ -1,5 +1,7 @@
 .features {
 	width: 100%;
+	min-height: 80vh;
+	padding: $huge 0;
 
 	@include flex(column, 0, flex-start, center);
 

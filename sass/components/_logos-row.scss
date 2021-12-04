@@ -1,0 +1,26 @@
+.logos-row {
+	width: 100%;
+	@include flex(row, 0, center, center);
+
+	& > :not(:last-child) {
+		margin-right: $big;
+	}
+
+	@include respond(tab-port) {
+		flex-direction: column;
+		& > :not(:last-child) {
+			margin-right: 0;
+			margin-bottom: $medium;
+		}
+	}
+
+	&__logo {
+		@include flex(column, 0, center, center);
+
+		& > :not(:last-child) {
+			margin-bottom: $small;
+		}
+	}
+
+	@include hider;
+}
