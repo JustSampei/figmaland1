@@ -1,19 +1,31 @@
 .list {
 	list-style: none;
-	margin-right: 2vw;
 	width: 100%;
 
 	@include flex(row, 1, flex-end, center);
 
 	&--column {
 		flex-direction: column;
+
+		li {
+			color: $color-grey-dark;
+			margin-right: 0;
+
+			&:not(:last-child) {
+				margin-bottom: $small;
+			}
+		}
 	}
 
-	li {
-		color: $color-grey-dark;
+	&--row {
+		margin-right: 2vw;
 
-		&:not(:last-child) {
-			margin-right: 2vw;
+		li {
+			color: $color-grey-dark;
+
+			&:not(:last-child) {
+				margin-right: 2vw;
+			}
 		}
 	}
 

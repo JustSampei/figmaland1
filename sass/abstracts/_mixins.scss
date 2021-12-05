@@ -50,7 +50,7 @@
 @mixin info-element {
 	&__info {
 		padding: 5vh;
-		width: 50%;
+		width: 60%;
 
 		@include flex(column, 0, flex-start, center);
 
@@ -61,5 +61,7 @@
 		@include respond(tab-port) {
 			width: 80%;
 		}
+
+		@content;
 	}
 }

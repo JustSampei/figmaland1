@@ -18,5 +18,10 @@
 		clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
 	}
 
-	@include info-element;
+	@include info-element {
+		@include respond (phone) {
+			padding: 0;
+			margin-top: 5vh;
+		}
+	};
 }

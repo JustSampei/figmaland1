@@ -1,18 +1,15 @@
 .card {
 	width: 30%;
+	max-width: 30rem;
 	padding: 3rem;
 	background-color: $color-white;
 
 	@include flex(column, 0, center, center);
 
 	&--spaced {
-		& * :not(:last-child) {
+		& > :not(:last-child) {
 			margin-bottom: $small;
 		}
-	}
-
-	&--limited {
-		max-width: 30rem;
 	}
 
 	&--rounded {
@@ -22,6 +19,9 @@
 	&--primary {
 		background-color: $color-primary;
 		transform: scaleY(120%);
+		& * {
+			transform: scaleY(95%);
+		}
 	}
 
 	&__icon {
@@ -39,10 +39,10 @@
 	}
 
 	@include respond(tab-port) {
-		width: 60%;
+		width: 40%;
 	}
 
 	@include respond(phone) {
-		width: 90%;
+		width: 60%;
 	}
 }

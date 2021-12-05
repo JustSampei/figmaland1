@@ -1,13 +1,11 @@
 @font-face {
     font-family: graphik;
-    src: url(../../Graphik-Light.ttf);
+    src: url(../../Graphik-Regular.ttf);
 }
-
 
 body {
 	font-family: graphik;
 	font-weight: 400;
-	color: $color-white;
 }
 
 .text {
@@ -21,6 +19,10 @@ body {
 
 	&--bolder {
 		font-weight: bolder !important;
+	}
+
+	&--uppercase {
+		text-transform: uppercase;
 	}
 }
 

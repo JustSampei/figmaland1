@@ -15,8 +15,10 @@
 		@include flex(row, 0, space-evenly, center);
 
 		&--spaced {
-			& > :not(:last-child) {
-				margin-bottom: $big;
+			@include respond(tab-port) {
+				& > :not(:last-child) {
+					margin-bottom: $huge;
+				}
 			}
 		}
 
