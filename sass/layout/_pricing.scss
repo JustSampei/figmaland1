@@ -3,15 +3,15 @@
 	min-height: 75vh;
 	padding: $huge 0;
 
-	background-color: #252b42;
+	background-color: $color-grey-dark;
 
 	@include flex(column, 0, center, center);
 
 	@include info-element;
 
 	&__cards {
-		width: 80%;
-		margin: 0 auto;
+		width: 90%;
+		margin: $huge auto;
 		@include flex(row, 0, space-evenly, center);
 
 		&--spaced {

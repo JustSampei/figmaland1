@@ -3,7 +3,6 @@
 	padding: 2rem 2rem;
 	color: currentColor;
 	text-decoration: none;
-	font-size: $tiny;
 	text-align: center;
 
 	&--primary {
@@ -17,7 +16,7 @@
 	}
 
 	&--large {
-		font-size: $small;
+		font-size: 120%;
 		padding: 1.5rem 3rem;
 	}
 

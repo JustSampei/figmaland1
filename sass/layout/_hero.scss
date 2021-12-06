@@ -1,5 +1,6 @@
 .hero {
 	height: 95vh;
+	min-height: 80rem;
 
 	@include flex (column, 1, flex-start, center);
 

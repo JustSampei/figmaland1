@@ -8,7 +8,7 @@
 
 	&--spaced {
 		& > :not(:last-child) {
-			margin-bottom: $tiny;
+			margin-bottom: $small;
 		}
 	}
 

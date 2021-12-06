@@ -8,11 +8,14 @@
 	}
 
 	&__map {
-		width: 75%;
+		width: 60%;
 	}
 
 	&__socials {
 		width: 100%;
-		background-color: $color-primary;
+	}
+
+	@include respond(tab-port) {
+		width: 90%;
 	}
 }

@@ -1,0 +1,51 @@
+.footer {
+	width: 100%;
+	min-height: 30vh;
+	padding: $huge 0;
+
+	background-color: $color-grey-dark;
+
+	@include flex(row, 0, space-evenly, center);
+
+	&__links {
+		width: 50%;
+
+		@include flex(row, 0, center, center);
+
+		& > :not(::last-child) {
+			margin-right: $medium;
+		}
+
+		@include respond(tab-port) {
+			flex-direction: column;
+			width: 80%;
+
+			& > :not(:last-child) {
+				margin-right: 0;
+				margin-bottom: $medium;
+			}
+		}
+	}
+
+	&__contact {
+		width: 30%;
+
+		@include flex(column, 0, center, center);
+
+		& > :not(:last-child) {
+			margin-bottom: $small;
+		}
+
+		@include respond(phone) {
+			width: 80%;
+		}
+	}
+
+	@include respond(tab-port) {
+		flex-direction: column;
+
+		& > :not(:last-child) {
+			margin-bottom: $medium;
+		}
+	}
+}

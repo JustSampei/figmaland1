@@ -6,6 +6,7 @@
 
 	&--column {
 		flex-direction: column;
+		align-items: flex-start;
 
 		li {
 			color: $color-grey-dark;
@@ -14,6 +15,10 @@
 			&:not(:last-child) {
 				margin-bottom: $small;
 			}
+		}
+
+		@include respond(tab-port) {
+			align-items: center;
 		}
 	}
 
