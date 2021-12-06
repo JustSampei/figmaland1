@@ -59,7 +59,7 @@
 
 	&__subscribe {
 		order: 2;
-		@include hider;
+		@include hider(tab-port);
 
 		@include seeker (tab-port) {
 			@include flex(column, 0, center, flex-start);

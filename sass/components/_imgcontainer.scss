@@ -50,4 +50,6 @@
 		left: 50%;
 		transform: translate(-40%, -50%);
 	}
+
+	@include hider(tab-port);
 }

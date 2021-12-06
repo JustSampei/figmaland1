@@ -1,0 +1,22 @@
+.contact {
+	width: 100%;
+	min-height: 75vh;
+	padding: $huge 0;
+
+	@include flex(column, 0, center, center);
+
+	@include info-element;
+
+	&__data {
+		width: 90%;
+		@include flex(row, 0, space-evenly, center);
+
+		@include respond (tab-port) {
+			flex-direction: column-reverse;
+
+			& > * {
+				margin-bottom: $medium;
+			}
+		}
+	}
+}

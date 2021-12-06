@@ -29,9 +29,9 @@
 	}
 }
 
-@mixin hider {
+@mixin hider ($breakpoint) {
 	&--hider {
-		@include respond(tab-port) {
+		@include respond($breakpoint) {
 			display: none;
 		}
 	}

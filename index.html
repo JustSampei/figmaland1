@@ -36,7 +36,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#contact">
 								<h6>Contact</h6>
 							</a>
 						</li>
@@ -52,22 +52,28 @@
 					</figure>
 				</div>
 				<div class="navbar__right">
-					<div class="socials">
-						<svg class="socials__icon">
-							<use
-								xlink:href="./img/SVG/sprite.svg#twitter"
-							></use>
-						</svg>
-						<svg class="socials__icon">
-							<use
-								xlink:href="./img/SVG/sprite.svg#facebook"
-							></use>
-						</svg>
-						<svg class="socials__icon">
-							<use
-								xlink:href="./img/SVG/sprite.svg#linkedin"
-							></use>
-						</svg>
+					<div class="socials socials--hider">
+						<div class="socials__icon socials__icon--limited">
+							<svg>
+								<use
+									xlink:href="./img/SVG/sprite.svg#twitter"
+								></use>
+							</svg>
+						</div>
+						<div class="socials__icon socials__icon--limited">
+							<svg>
+								<use
+									xlink:href="./img/SVG/sprite.svg#facebook"
+								></use>
+							</svg>
+						</div>
+						<div class="socials__icon socials__icon--limited">
+							<svg>
+								<use
+									xlink:href="./img/SVG/sprite.svg#linkedin"
+								></use>
+							</svg>
+						</div>
 					</div>
 					<div class="navigation">
 						<input
@@ -132,7 +138,7 @@
 				</div>
 				<div class="card card--spaced">
 					<svg class="card__icon">
-						<use xlink:href="./img/SVG/sprite.svg#pen"></use>
+						<use xlink:href="./img/SVG/sprite.svg#pencil"></use>
 					</svg>
 					<div class="card__info">
 						<div class="description description--center">
@@ -232,20 +238,23 @@
 					</h5>
 				</div>
 				<div class="subscribe-form subscribe-form--hider">
-					<input
-						class="subscribe-form__input input"
-						type="text"
-						placeholder="Your email"
-					/>
-					<a
-						href="#"
-						class="
-							subscribe-form__button
-							button button--primary
-							text--bolder text--center
-						"
-						>Subscribe</a
-					>
+					<div class="subscribe-form__input">
+						<input
+							class="input"
+							type="text"
+							placeholder="Your email"
+						/>
+					</div>
+					<div class="subscribe-form__button">
+						<a
+							href="#"
+							class="
+								button button--primary
+								text--bolder text--center
+							"
+							>Subscribe</a
+						>
+					</div>
 				</div>
 			</div>
 			<div class="newsletter__subscribe newsletter__subscribe--seeker">
@@ -258,20 +267,23 @@
 					</h5>
 				</div>
 				<div class="subscribe-form">
-					<input
-						class="subscribe-form__input input"
-						type="text"
-						placeholder="Your email"
-					/>
-					<a
-						href="#"
-						class="
-							subscribe-form__button
-							button button--primary
-							text--bolder text--center
-						"
-						>Subscribe</a
-					>
+					<div class="subscribe-form__input">
+						<input
+							class="input"
+							type="text"
+							placeholder="Your email"
+						/>
+					</div>
+					<div class="subscribe-form__button">
+						<a
+							href="#"
+							class="
+								button button--primary
+								text--bolder text--center
+							"
+							>Subscribe</a
+						>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -622,8 +634,113 @@
 		</section>
 
 		<!-- CONTACT SECTION -->
-		<section class="contact">
-			<div class=""></div>
+		<section class="contact" id="contact">
+			<div class="contact__info">
+				<div class="description description--center">
+					<h2 class="description__title">Contact us</h2>
+					<h4 class="description__subtitle">
+						Most calendars are designed for teams. Slate is designed
+						for freelancers
+					</h4>
+				</div>
+			</div>
+			<div class="contact__data">
+				<div class="card card--rounded card--spaced card--left card--big-width">
+					<div class="description description--center">
+						<h3 class="description__subtitle text--bolder">
+							Contact us
+						</h3>
+					</div>
+					<input class="input" type="text" placeholder="Your name" />
+					<input
+						class="input"
+						type="email"
+						placeholder="Your email"
+					/>
+					<textarea
+						class="input input--squared input--long"
+						placeholder="Your message"
+					></textarea>
+					<a href="#" class="button button--primary">Send</a>
+				</div>
+				<div class="location">
+					<div class="location__contacts">
+						<div class="socials socials--spaced socials--collapse">
+							<div class="socials__icon socials__icon--primary socials__icon--torow">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#position"
+									></use>
+								</svg>
+								<h6 class="text--center">
+									6386 Spring St undefined Anchorage, Georgia
+									12473 United States
+								</h6>
+							</div>
+							<div class="socials__icon socials__icon--primary socials__icon--torow">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#phone"
+									></use>
+								</svg>
+								<h6 class="text--center">(843) 555-0130</h6>
+							</div>
+							<div class="socials__icon socials__icon--primary socials__icon--torow">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#mail"
+									></use>
+								</svg>
+								<h6 class="text--center">
+									willie.jennings@example.com
+								</h6>
+							</div>
+						</div>
+					</div>
+					<div class="location__map">
+						<div class="img-container img-container--padding img-container--hider">
+							<img
+								class="
+									img-container__img
+									img-container__img--medium
+								"
+								src="./img/map.png"
+								alt="map"
+							/>
+						</div>
+					</div>
+					<div class="location__socials">
+						<div class="socials socials--start">
+							<div class="socials__icon socials__icon--limited">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#twitter"
+									></use>
+								</svg>
+							</div>
+							<div class="socials__icon socials__icon--limited">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#facebook"
+									></use>
+								</svg>
+							</div>
+							<div class="socials__icon socials__icon--limited">
+								<svg>
+									<use
+										xlink:href="./img/SVG/sprite.svg#linkedin"
+									></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER SECTION -->
+		<section class="footer">
+
 		</section>
 	</body>
 </html>

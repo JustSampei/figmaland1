@@ -11,6 +11,6 @@
 		border: none;
 	}
 
-	@include hider;
+	@include hider(tab-port);
 
 }

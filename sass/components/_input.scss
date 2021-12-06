@@ -1,12 +1,11 @@
 .input {
-	display: inline;
-
-	border-radius: 100px;
+	width: 100%;
 	padding: 2rem 2rem;
+
 	background-color: $color-grey-light;
-	border: 2px ;
-	border-style: solid;
-	border-color: $color-grey;
+
+	border: 2px solid $color-grey;
+	border-radius: 100px;
 
 	&--primary {
 		background-color: $color-primary;
@@ -18,5 +17,11 @@
 
 	&--squared {
 		border-radius: 0;
+	}
+
+	&--long {
+		max-width: 100%;
+		min-height: 20vh;
+		max-height: 30vh;
 	}
 }

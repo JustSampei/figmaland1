@@ -28,5 +28,5 @@
 		font-weight: 500;
 	}
 
-	@include hider;
+	@include hider(tab-port);
 }

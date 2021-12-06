@@ -1,14 +1,73 @@
 .socials {
-	@include respond(tab-port) {
-		display: none;
+	width: 100%;
+
+	@include flex(row, 0, center, center);
+
+	& > :not(:last-child) {
+		margin-right: $small;
+	}
+
+	&--spaced {
+		justify-content: space-evenly;
+	}
+
+	&--start {
+		justify-content: flex-start;
+
+		@include respond(tab-port) {
+			justify-content: center;
+		}
+	}
+
+	&--collapse {
+		@include respond(tab-port) {
+			flex-direction: column;
+			align-items: flex-start;
+
+			& > :not(:last-child) {
+				margin-right: 0;
+				margin-bottom: $small;
+			}
+		}
 	}
 
 	&__icon {
-		height: 3rem;
-		width: 3rem;
+		width: 100%;
 
-		&:not(:last-child) {
-			margin-right: 2vw;
+		@include flex(column, 0, center, center);
+
+		& > :not(:last-child) {
+			margin-bottom: $small;
+		}
+
+		&--primary {
+			& svg {
+				color: $color-primary;
+			}
+		}
+
+		&--limited {
+			width: auto;
+		}
+
+		& svg {
+			height: 3rem;
+			width: 3rem;
+		}
+
+		&--torow {
+			@include respond(tab-port) {
+				flex-direction: row;
+				margin-right: 0;
+				justify-content: flex-start;
+
+				& > :not(:last-child) {
+					margin-bottom: 0;
+					margin-right: $small;
+				}
+			}
 		}
 	}
+
+	@include hider(tab-port);
 }

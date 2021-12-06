@@ -12,7 +12,6 @@
 	@include info-element;
 
 	&__media {
-		width: 100%;
 		@include flex(row, 0, center, center);
 
 		& > :not(:last-child) {
